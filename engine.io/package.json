@@ -1,5 +1,5 @@
 {
-  "name": "test engine.io",
+  "name": "test_engine.io",
   "scripts": {
     "start": "node --nouse-idle-notification --expose-gc --max-old-space-size=8192 server.js"
   },
