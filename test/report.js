@@ -31,17 +31,17 @@ var calculate = function(useTimesArray) {
 
 var reportFormat = function() {
     return '---------------分割线------------------\n' +
-        'count = '+report.count + '\n' +
-          'min = '+report.min + '\n' +
-          'max = '+report.max +'\n' +
-         'mean = '+report.mean +'\n' +
-        'stdev = '+report.stdev +'\n' +
-       'median = '+report.median +'\n' +
-         '75% <= '+report.$75 +'\n' +
-         '95% <= '+report.$95 +'\n' +
-         '98% <= '+report.$98 +'\n' +
-         '99% <= '+report.$99 +'\n' +
-       '99.9% <= '+report.$99_9;
+    '  count = '+report.count + '\n' +
+    '    min = '+report.min + '\n' +
+    '    max = '+report.max +'\n' +
+    '   mean = '+report.mean +'\n' +
+    '  stdev = '+report.stdev +'\n' +
+    ' median = '+report.median +'\n' +
+    '   75% <= '+report.$75 +'\n' +
+    '   95% <= '+report.$95 +'\n' +
+    '   98% <= '+report.$98 +'\n' +
+    '   99% <= '+report.$99 +'\n' +
+    ' 99.9% <= '+report.$99_9;
 };
 
 module.exports = {
