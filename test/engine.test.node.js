@@ -7,7 +7,7 @@ var i = 0;
 while (i < CONNECT_MAX) {
     i++;
 
-    var socket = eioClient('ws://10.19.86.59:22280/');
+    var socket = eioClient('ws://10.104.128.29:22280/');
     socket.on('open', function() {
         socket.on('message', function(data){
             var useTime = Date.now() - parseInt(data);

@@ -7,7 +7,7 @@ var i = 0;
 while (i < CONNECT_MAX) {
     i++;
 
-    var ws = new WebSocket('ws://localhost:22281');
+    var ws = new WebSocket('ws://10.104.128.29:22281');
     ws.on('message', function incoming(data) {
         var useTime = Date.now() - parseInt(data);
         useTimesArray.push(useTime);

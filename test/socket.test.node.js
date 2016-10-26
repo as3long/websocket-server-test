@@ -6,7 +6,7 @@ var i = 0;
 while (i < CONNECT_MAX) {
     i++;
 
-    var socket = require('socket.io-client')('http://localhost:22282');
+    var socket = require('socket.io-client')('http://10.104.128.29:22282');
     socket.on('message', function(data){
         var useTime = Date.now() - parseInt(data);
         useTimesArray.push(useTime);
