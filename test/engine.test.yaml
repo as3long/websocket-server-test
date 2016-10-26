@@ -1,0 +1,19 @@
+{
+  "config": {
+    "target": "ws://localhost:22280/",
+    "phases": [{
+        "duration": 20,
+        "arrivalRate": 10
+    }]
+  },
+  "scenarios": [
+    {
+      "engine": "ws",
+      "flow": [
+        {"send": "hello"},
+        {"think": 1},
+        {"send": "world"}
+      ]
+    }
+  ]
+}
