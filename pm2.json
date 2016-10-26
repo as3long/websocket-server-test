@@ -2,26 +2,32 @@
   apps : [{
     name        : "ws-server",
     script      : "./ws/server.js",
+    instances   : "max",
     node_args   : "--nouse-idle-notification --expose-gc --max-new-space-size=2048 --max-old-space-size=8192"
   }, {
     name        : "engine-server",
     script      : "./engine.io/server.js",
+    instances   : "max",
     node_args   : "--nouse-idle-notification --expose-gc --max-new-space-size=2048 --max-old-space-size=8192"
   }, {
     name        : "socket-server",
     script      : "./socket.io/server.js",
+    instances   : "max",
     node_args   : "--nouse-idle-notification --expose-gc --max-new-space-size=2048 --max-old-space-size=8192"
   }, {
     name        : "ws-test",
     script      : "./test/ws.test.node.js",
+    instances   : "max",
     node_args   : "--nouse-idle-notification --expose-gc --max-new-space-size=2048 --max-old-space-size=8192"
   }, {
     name        : "engine-test",
     script      : "./test/engine.test.node.js",
+    instances   : "max",
     node_args   : "--nouse-idle-notification --expose-gc --max-new-space-size=2048 --max-old-space-size=8192"
   }, {
     name        : "socket-test",
     script      : "./test/socket.test.node.js",
+    instances   : "max",
     node_args   : "--nouse-idle-notification --expose-gc --max-new-space-size=2048 --max-old-space-size=8192"
   }]
 }
