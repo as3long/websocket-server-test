@@ -1,5 +1,5 @@
 var eioClient = require('engine.io-client');
-var CONNECT_MAX = 3000;
+var CONNECT_MAX = 10000;
 var useTimesArray = [];
 var report = require('./report');
 

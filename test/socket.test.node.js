@@ -1,4 +1,4 @@
-var CONNECT_MAX = 2000;
+var CONNECT_MAX = 10000;
 var useTimesArray = [];
 var report = require('./report');
 

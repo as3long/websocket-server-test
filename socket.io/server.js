@@ -6,7 +6,7 @@ io.on('connection', function(client){
     // });
 });
 io.listen(22282);
-var CONNECT_MAX = 2000;
+var CONNECT_MAX = 18000;
 
 function broadcast() {
   io.clients(function(error, clients) {

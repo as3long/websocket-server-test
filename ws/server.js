@@ -1,6 +1,6 @@
 var WebSocketServer = require('ws').Server;
 var wss = new WebSocketServer({ port: 22281 });
-var CONNECT_MAX = 4000;
+var CONNECT_MAX = 18000;
 
 wss.on('connection', function connection(ws) {
   // ws.on('message', function incoming(message) {
@@ -22,7 +22,7 @@ function broadcast() {
 }
 
 function send() {
-	setInterval(broadcast, 40 * 1000)
+	setInterval(broadcast, 20 * 1000)
 }
 
 send();

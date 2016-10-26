@@ -1,6 +1,6 @@
 var engine = require('engine.io');
 var server = engine.listen(22280);
-var CONNECT_MAX = 1000;
+var CONNECT_MAX = 18000;
 
 server.on('connection', function(socket) {
   // socket.send('hello world');
@@ -20,7 +20,7 @@ function broadcast() {
 }
 
 function send() {
-	setInterval(broadcast, 6 * 1000)
+	setInterval(broadcast, 20 * 1000)
 }
 
 send();
